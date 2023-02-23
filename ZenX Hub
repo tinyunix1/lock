@@ -1,0 +1,173 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("NIGGER Hub", "DarkTheme")
+
+--MAIN
+local Locks = Window:NewTab("Locks")
+local LocksSection = Locks:NewSection("Locks")
+
+
+
+
+
+LocksSection:NewButton("streamable silent", "Q lock", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/J66ZWaRZ"))()
+end)
+
+
+LocksSection:NewButton("Anti Fling", "bind is P", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/Linux6699/DaHubRevival/main/AntiFling.lua'))()"))()
+end)
+
+
+LocksSection:NewButton("Leaked", "ButtonInfo", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/tinyunix1/leaked-lock/main/source"))()"))()'))()"))()
+end)
+
+
+
+LocksSection:NewButton("Streamable lock", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Q3jGyVHX"))()'))()"))()
+end)
+
+
+
+
+LocksSection:NewButton("ASS", "lock button is c and it is silent aim", function()
+    --[[
+
+
+
+        ██████       ██████      ██       ████████
+      ████████      ████████     ██       ████████
+      ████         ███    ██     ██          ██
+      ██           ██     ██     ██          ██
+      █████        ██    ███     ██          ██
+      ████████     ████████      ██████      ██
+         █████      ██████       ██████      ██
+         
+         -- resolver made by colt, dont pick people up it will make you slightly cframe.
+]]
+
+loadstring(game:HttpGet("https://pastebin.com/raw/zVeEZTs6"))()
+DaHoodSettings.Prediction = 0.1437 -- lower for lower ping and higher for higher ping.
+Aiming.FOV = 11.5 -- size of silent aim
+Aiming.FOVSides = 25 -- how smooth silent aim circle is
+Aiming.HitChance = 100 
+Aiming.ShowFOV = false
+
+ getgenv().AimlockKey = "c" -- aimbot toggle
+ getgenv().AimPart = "UpperTorso" -- UpperTorso, LowerTorso, HumanoidRootPart, Head
+ getgenv().PredictionVelocity = 3 -- aimbot prediction.
+ getgenv().SmoothnessAmount = 0.009 -- dont go over 0.01 to look legit
+end)
+LocksSection:NewButton("ButtonText", "q Lock is silent dm me on discord if i should add more look at credits for all details", function()
+    getgenv().AimingSettings = {
+        Aimbot = {
+            Radius = 45,
+            Hitbox = "Head",
+            CameraMode = true,
+            MouseMode = false,
+            HitAirshots = false,
+            AutoPrediction = false,
+            NotificationMode = false,
+            Keybind = Enum.KeyCode.Q,
+            PredictionAmount = 0.165,
+    
+    
+    
+            Smoothing = {
+            Enabled = true,
+            Amount = 0.030
+        },
+     }
+    }
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tenakii/tenaaki/main/genericaimbot.v.2.0.0"))()
+end)
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+local Anti Lock = Window:NewTab("Anti Lock")
+local Anti LockSection = Anti Lock:NewSection("Anti Lock")
+
+local Player Mods = Window:NewTab("Player Mods")
+local Player ModsSection = Player Mods:NewSection("Player Mods")
+
+PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+
+local Loaders = Window:NewTab("Loaders")
+local LoadersSection = Loaders:NewSection("Loaders")
+
+local Universal = Window:NewTab("Universal")
+local UniversalSection = Universal:NewSection("Universal")
+
+
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+end)
+
+OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+    Fly(true)
+end)
+
+
+local Player Spoofer = Window:NewTab("Player Mods")
+local Spoofer SpooferSection = Player Mods:NewSection("Spoofer")
+
+OtherSection:NewButton("Ip Spoofer", "Spoofs Ip Too 69.69.420", function()
+    spoofedIP = "69.69.420"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuizzyisbackV2LOL/HelloLua/main/looferrlua"))()
+end)
+
+
+local Fun = Window:NewTab("Main")
+local FunSection = Main:NewSection("Main")
+
+
+FunSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+end)
+
+FunSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+    if state then
+        game.player.Character.Humanoid.WalkSpeed = 120
+        game.player.Character.Humanoid.JumpPower = 120
+    else
+        game.player.Character.Humanoid.WalkSpeed = 16
+        game.player.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+FunSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+
+
+
+
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
