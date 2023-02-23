@@ -21,13 +21,13 @@ end)
 
 
 LocksSection:NewButton("Leaked", "ButtonInfo", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/tinyunix1/leaked-lock/main/source"))()"))()'))()"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/tinyunix1/leaked-lock/main/source"))()
 end)
 
 
 
 LocksSection:NewButton("Streamable lock", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Q3jGyVHX"))()'))()"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Q3jGyVHX"))()
 end)
 
 
