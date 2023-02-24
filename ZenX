@@ -21,13 +21,13 @@ end)
 
 
 LocksSection:NewButton("Leaked", "ButtonInfo", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/tinyunix1/leaked-lock/main/source"))()
+    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/tinyunix1/leaked-lock/main/source"))()"))()'))()"))()
 end)
 
 
 
 LocksSection:NewButton("Streamable lock", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Q3jGyVHX"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Q3jGyVHX"))()'))()"))()
 end)
 
 
@@ -93,6 +93,36 @@ local MainSection = Main:NewSection("Main")
 
 local Anti Lock = Window:NewTab("Anti Lock")
 local Anti LockSection = Anti Lock:NewSection("Anti Lock")
+
+Anti LockSection:NewButton("BEST AA I CAN FIND", "ButtonInfo", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/chrsschrs/antilocks/main/aa"))()"))()'))()"))()
+end)
+
+
+
+LocksSection:NewButton("Streamable lock", "X underground aa C sky aa V desync aa", function()
+    loadstring(game:HttpGet("getgenv().FatalitySettings = {
+    
+        ["UndergroundEnabled"] = true,
+        
+        ["UndergroundKeybind"] = "X",
+        
+        ["SkyEnabled"] = true,
+        
+        ["SkyKeybind"] = "C",
+        
+        ["DesyncEnabled"] = true,
+        
+        ["DesyncKeybind"] = "V"
+        
+    }
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tailgater/Fatality/main/StandaloneAntiLock", true))()
+    --second loadstring
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tailgater/Fatality/main/AntiLock"))()"))()'))()"))()
+end)
+
 
 local Player Mods = Window:NewTab("Player Mods")
 local Player ModsSection = Player Mods:NewSection("Player Mods")
@@ -170,4 +200,5 @@ end)
 
 local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("Credits")
+
 
