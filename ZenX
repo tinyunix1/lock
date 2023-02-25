@@ -1,181 +1,243 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-
-local Window = Library.CreateLib("ZenX Hub", "DarkTheme")
-
---MAIN
-local Locks = Window:NewTab("Locks")
-local LocksSection = Locks:NewSection("Locks")
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+getgenv().SecureMode = true
 
 
 
-
-
-LocksSection:NewButton("streamable silent", "Q lock", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/J66ZWaRZ"))()
-end)
-
-
-LocksSection:NewButton("Anti Fling", "bind is P", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/Linux6699/DaHubRevival/main/AntiFling.lua'))()"))()
-end)
-
-
-LocksSection:NewButton("Leaked", "ButtonInfo", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/tinyunix1/leaked-lock/main/source"))()
-end)
-
-
-
-LocksSection:NewButton("Streamable lock", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Q3jGyVHX"))()
-end)
-
-
-
-
-LocksSection:NewButton("ASS", "lock button is c and it is silent aim", function()
-    --[[
-
-
-
-        ██████       ██████      ██       ████████
-      ████████      ████████     ██       ████████
-      ████         ███    ██     ██          ██
-      ██           ██     ██     ██          ██
-      █████        ██    ███     ██          ██
-      ████████     ████████      ██████      ██
-         █████      ██████       ██████      ██
-         
-         -- resolver made by colt, dont pick people up it will make you slightly cframe.
-]]
-
-loadstring(game:HttpGet("https://pastebin.com/raw/zVeEZTs6"))()
-DaHoodSettings.Prediction = 0.1437 -- lower for lower ping and higher for higher ping.
-Aiming.FOV = 11.5 -- size of silent aim
-Aiming.FOVSides = 25 -- how smooth silent aim circle is
-Aiming.HitChance = 100 
-Aiming.ShowFOV = false
-
- getgenv().AimlockKey = "c" -- aimbot toggle
- getgenv().AimPart = "UpperTorso" -- UpperTorso, LowerTorso, HumanoidRootPart, Head
- getgenv().PredictionVelocity = 3 -- aimbot prediction.
- getgenv().SmoothnessAmount = 0.009 -- dont go over 0.01 to look legit
-end)
-LocksSection:NewButton("ButtonText", "q Lock is silent dm me on discord if i should add more look at credits for all details", function()
-    getgenv().AimingSettings = {
-        Aimbot = {
-            Radius = 45,
-            Hitbox = "Head",
-            CameraMode = true,
-            MouseMode = false,
-            HitAirshots = false,
-            AutoPrediction = false,
-            NotificationMode = false,
-            Keybind = Enum.KeyCode.Q,
-            PredictionAmount = 0.165,
-    
-    
-    
-            Smoothing = {
-            Enabled = true,
-            Amount = 0.030
+local Window = Rayfield:CreateWindow({
+	Name = "discord.gg/rCx54xGTmd MADE BY 8.#9308 and poof#8110",
+	LoadingTitle = "ZenX Ontop Join discord.gg/rCx54xGTmd",
+	LoadingSubtitle = "by 8.#9308",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "ZenX Hub"
+	},
+        Discord = {
+        	Enabled = false,
+        	Invite = "rCx54xGTmd", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
         },
-     }
-    }
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "ZenX Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord (discord.gg/rCx54xGTmd)",
+		FileName = "ZenX Key",
+		SaveKey = false,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "1010-PVPOP;091I2J-APOSLF"
+	}
+})
+
+local Tab = Window:CreateTab("locks/anti locks", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Locks")
+local Button = Tab:CreateButton({
+	Name = "Lock SILENT",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/tL3Rvzu8')))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "SPECTER LEAKED",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/DenR2tZ1"))()
+	end,
+})
+
+
+
+local Button = Tab:CreateButton({
+	Name = "Lock UI LEAKED (Azure)",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/C41gr7fv')))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Universal SILENT",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xUnanimous/es/main/uni-sa0/main.lua"))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "TOGGLE WITH LOWERCASE v",
+	Callback = function()
+		getgenv().Toggle = "v"--Must be lowercase
+getgenv().Intro = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "akon private LOCK leaked",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/S1NSWRLD/Akon-Private/main/akon%20BEST%20LOCK.lua", true))() 
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Rage Resolver",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/nyulauh"))();
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "IDFK what this is Buy Use lower case v to toggle",
+	Callback = function()
+		getgenv().Toggle = "v"--Must be lowercase
+getgenv().Intro = false
+local Zenaki = false
+
+function onKeyPress(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.Y and gameProcessedEvent == false then
+     if Zenaki == false then
+       Zenaki = true
+
+     elseif Zenaki == true then
+       Zenaki = false
     
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tenakii/tenaaki/main/genericaimbot.v.2.0.0"))()
-end)
-local Player = Window:NewTab("Player")
-local PlayerSection = Player:NewSection("Player")
-
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Main")
-
-local Anti Lock = Window:NewTab("Anti Lock")
-local Anti LockSection = Anti Lock:NewSection("Anti Lock")
-
-AntiLockSection:NewButton("BEST AA I CAN FIND", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/chrsschrs/antilocks/main/aa"))()
-end)
+       
+     end
+   end
+end
+ 
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
 
 
-
-
-local Player Mods = Window:NewTab("Player Mods")
-local Player ModsSection = Player Mods:NewSection("Player Mods")
-
-PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
-PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)
-
-PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-end)
-
-
-local Loaders = Window:NewTab("Loaders")
-local LoadersSection = Loaders:NewSection("Loaders")
-
-local Universal = Window:NewTab("Universal")
-local UniversalSection = Universal:NewSection("Universal")
-
-
-local Other = Window:NewTab("Other")
-local OtherSection = Other:NewSection("Other")
-
-OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
-    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
-end)
-
-OtherSection:NewButton("Bypassed Fly", "bird mode", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
-
-    Fly(true)
-end)
-
-
-local Player Spoofer = Window:NewTab("Player Mods")
-local Spoofer SpooferSection = Player Mods:NewSection("Spoofer")
-
-OtherSection:NewButton("Ip Spoofer", "Spoofs Ip Too 69.69.420", function()
-    spoofedIP = "69.69.420"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GuizzyisbackV2LOL/HelloLua/main/looferrlua"))()
-end)
-
-
-local Fun = Window:NewTab("Main")
-local FunSection = Main:NewSection("Main")
-
-
-FunSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
-end)
-
-FunSection:NewToggle("Super-Human", "go fast and jump high", function(state)
-    if state then
-        game.player.Character.Humanoid.WalkSpeed = 120
-        game.player.Character.Humanoid.JumpPower = 120
-    else
-        game.player.Character.Humanoid.WalkSpeed = 16
-        game.player.Character.Humanoid.JumpPower = 50
+    game:GetService("RunService").RenderStepped:Connect(function()
+    if Zenaki == true then
+ game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 14
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0, math.rad(3.50), 0)
     end
+    
 end)
-
-FunSection:NewButton("Infinite Yield", "FE Admin Commands", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-end)
-
+loadstring(game:HttpGet("https://gist.githubusercontent.com/murderspree/84309f4b27fc481923f1a647c204826d/raw/a1134751b9ab8cdae1b4fbc7db9230516d8d0eca/gistfile1.txt"))()
+	end,
+})
 
 
+local Section = Tab:CreateSection("Anti Locks")
+
+
+local Button = Tab:CreateButton({
+	Name = "DeSync",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/q8LXbdrH",true))()
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "SYNAPSE ONLY ANTI LOCK",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/tailgater/Fatality/main/Synapse"))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Z TO TOGGLE AIM VIEW C FOR ANTI LOCK",
+	Callback = function()
+		--< DM fear#0004 for help >--
+
+--< Aimviewer Settings >--
+AimviewerToggleKeybind = "z" -- Aimviewer toggle keybind
+AimviewerSwitchKeybind = "x" -- Switch player keybind
+AimviewerColor = Color3.fromRGB(255, 0, 0) -- Color of Aimviewer beam
+AimviewerBeamWidth = 0.3 -- Width of Aimviewer beam
+
+--< Desync Settings >--
+DesyncKeybind = (Enum.KeyCode.V) -- Desync toggle keybind
+DesyncOffset = 3 -- Desync Offset
+
+--< Antilock >--
+AntiKeybind = "c" -- Antilock toggle keybind
+AntiVelocity = 1450,1450,1450 -- Only change this if yk what youre doing
+
+--< Miscallaneous >--
+icon = "rbxassetid://12319510751" -- Notification Image
+
+--------------------------------------------------------------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fear0004/script/main/endlockers"))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "SYNAPSE ONLY ANTI LOCK",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/tailgater/Fatality/main/Synapse"))()
+	end,
+})
 
 
 
-local Credits = Window:NewTab("Credits")
-local CreditsSection = Credits:NewSection("Credits")
 
 
+local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "TELEPORTS",
+	Callback = function()
+		db:getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1039.59985, 18.8513641, -256.449951, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+rev:getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-638.75, 18.8500004, -118.175011, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Bank :getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402.123718, 21.75, -283.988617, 0.0159681588, -0.000121377925, -0.999872446, -2.60148026e-05, 1, -0.000121808866, 0.999872506, 2.79565484e-05, 0.0159681737)
+Food :getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-338.352173, 23.6826477, -297.2146, -0.0060598203, -1.03402984e-08, -0.999981582, -1.61653102e-09, 1, -1.03306892e-08, 0.999981582, 1.55389912e-09, -0.0060598203)
+Armor :getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-607.978455, 7.44964886, -788.494263, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "spoofs ip to 69.69.69:4200",
+	Callback = function()
+		spoofedIP = "69.69.69:4200"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuizzyisbackV2LOL/HelloLua/main/looferrlua"))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Speed made by ZenX DEV'S",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/wQtVH6f6"))();
+	end,
+})
+
+
+
+local Tab = Window:CreateTab("Local Player", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "RAINBOW CHARACTER",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ce5rWJJ9"))();
+	end,
+})
+
+
+
+
+
+local Tab = Window:CreateTab("Esp", 4483362458) -- Title, Image
+
+
+
+
+local Tab = Window:CreateTab("Anti Toggles", 4483362458) -- Title, Image
+
+
+local Button = Tab:CreateButton({
+	Name = "ANTI BAG",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/hgKFQWFq"))();
+	end,
+})
+
+
+
+
+
+
+
+
+Rayfield:LoadConfiguration()
